@@ -1,16 +1,20 @@
 ﻿<?xml version="1.0" encoding="UTF-8" ?>
 <MasterDetailPage
-    xmlns="http://xamarin.com/schemas/2014/forms"
-    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-    x:Class="My.Shared.MasterDetailPageTest">
-    <MasterDetailPage.Master>
-        <ContentPage>
-            <Label Text="Master"/>
-        </ContentPage>
-    </MasterDetailPage.Master>
-    <MasterDetailPage.Detail>
-        <ContentPage>
-            <Label Text="Detail"/>
-        </ContentPage>
-    </MasterDetailPage.Detail>
+	xmlns="http://xamarin.com/schemas/2014/forms"
+	xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+	x:Class="My.Shared.MasterDetailPageTest">
+	<!--
+	have to set the title property of the masters content page, otherwise 
+	you will get an exception.
+	-->
+	<MasterDetailPage.Master>
+		<ContentPage Title="title" >
+			<Label Text="Master"/>
+		</ContentPage>
+	</MasterDetailPage.Master>
+	<MasterDetailPage.Detail>
+		<ContentPage>
+			<Label Text="Detail"/>
+		</ContentPage>
+	</MasterDetailPage.Detail>
 </MasterDetailPage>

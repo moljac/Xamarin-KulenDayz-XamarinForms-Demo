@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<NavigationPage
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="My.Shared.Page">
+	<!--
+	
+	There isn't much to a NavigationPage - it's just a container for a stack of pages.
+
+NavigationPage nav = new NavigationPage(new ContentPage() { Title = "First Page" );
+
+Any page contained within the NavigationPage will be able to use the Navigation class to push and pop pages off of the stack.
+
+	Just to be complete here: NavigationPage does not have a property for 
+	the root page, that's why you fail at creating it from Xaml. 
+	For NavigationPage, what's @CraigDunn‌ recommend is the right approach here.
+
+	Now, if you really think Xaml is that cool, and really want doing that in 
+	xaml, well, you can, using xaml 2009:
+	
+	
+	-->
+	<x:Arguments>
+		<Page>
+			<ScrollView>
+				<StackLayout x:Name="layout" Orientation="Vertical" VerticalOptions="Start" HorizontalOptions="Center">
+					<ActivityIndicator x:Name="activity"></ActivityIndicator>
+				</StackLayout>
+			</ScrollView>
+		</Page>
+	</x:Arguments>
+</NavigationPage>

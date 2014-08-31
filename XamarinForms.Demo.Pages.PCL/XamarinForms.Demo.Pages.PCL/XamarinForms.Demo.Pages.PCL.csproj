@@ -35,11 +35,29 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="App.cs" />
+    <Compile Include="CarouselPage.xaml.cs">
+      <DependentUpon>CarouselPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ClaNavigationPageDemo.xaml.cs">
+      <DependentUpon>ClaNavigationPageDemo.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ContentPageDemo.xaml.cs">
+      <DependentUpon>ContentPageDemo.xaml</DependentUpon>
+    </Compile>
     <Compile Include="MasterDetail.xaml.cs">
       <DependentUpon>MasterDetail.xaml</DependentUpon>
     </Compile>
+    <Compile Include="MasterDetail2.xaml.cs">
+      <DependentUpon>MasterDetail2.xaml</DependentUpon>
+    </Compile>
     <Compile Include="PageFactory.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="TabbedPageDemo.xaml.cs">
+      <DependentUpon>TabbedPageDemo.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="TabbedPageDemo2.xaml.cs">
+      <DependentUpon>TabbedPageDemo2.xaml</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Reference Include="Xamarin.Forms.Core">
@@ -54,6 +72,42 @@
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="MasterDetail.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="MasterDetail2.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="CarouselPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="TabbedPageDemo.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="ContentPageDemo.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="TabbedPageDemo2.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="ClaNavigationPageDemo.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </EmbeddedResource>
