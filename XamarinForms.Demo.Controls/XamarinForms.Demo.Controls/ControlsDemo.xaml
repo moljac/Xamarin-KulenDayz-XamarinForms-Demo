@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+					   xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+					   x:Class="XamarinForms.Demo.Controls.ControlsDemo">
+	<Label
+		Text="{Binding MainText}"
+		>
+	</Label>
+	<Edit
+		Text="{Binding MainText}"
+		>
+	</Edit>
+	<!--
+	<Button
+		Text="{Binding MainText}"
+		>
+	</Button>
+	<Stepper
+		Text="{Binding MainText}"
+		>
+	</Stepper>
+	<Slider
+		Text="{Binding MainText}"
+		>
+	</Slider>
+	<Picker
+		>
+
+	</Picker>
+	<DatePicker
+		>
+		
+	</DatePicker>
+	<TimePicker
+		>
+	</TimePicker>
+	-->
+</ContentPage>
