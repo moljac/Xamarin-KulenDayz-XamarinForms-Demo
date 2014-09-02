@@ -11,15 +11,8 @@ namespace XamarinForms.Demo.Controls
 	{
 		public static Page GetMainPage()
 		{
-			return new ContentPage
-			{
-				Content = new Label
-				{
-					Text = "Hello, Forms !",
-					VerticalOptions = LayoutOptions.CenterAndExpand,
-					HorizontalOptions = LayoutOptions.CenterAndExpand,
-				},
-			};
+			// ControlsDemo.xaml
+			return new ControlsDemo();
 		}
 	}
 }
