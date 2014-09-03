@@ -11,15 +11,39 @@ namespace Demo.Platform.DependencyService
 	{
 		public static Page GetMainPage()
 		{
-			return new ContentPage
+			return UIPageWithCode();
+			//return UIPageWithXaml();			
+		}
+
+		public static ContentPage UIPageWithCode()
+		{
+			Button buttonPrint = new Button()
 			{
-				Content = new Label
-				{
-					Text = "Hello, Forms !",
-					VerticalOptions = LayoutOptions.CenterAndExpand,
-					HorizontalOptions = LayoutOptions.CenterAndExpand,
-				},
+				Text = "Print"
 			};
+
+			buttonPrint.Clicked += buttonPrint_Clicked;
+			ContentPage page = new ContentPage()
+			{
+				Content = buttonPrint
+			};
+
+			return page;
+		}
+
+		static void buttonPrint_Clicked(object sender, EventArgs e)
+		{
+			IBluetoothPrinterService ibs = null;
+			
+
+			// get Registered service from Platform lib
+			ibs = Xamarin.Forms.DependencyService.Get<IBluetoothPrinterService>();
+
+			string data = "KulenDayz 2014";
+
+			ibs.Write(data);
+
+			return;
 		}
 	}
 }

@@ -11,15 +11,23 @@ namespace Demo.Platform.CustomControls
 	{
 		public static Page GetMainPage()
 		{
-			return new ContentPage
+			return UIPageWithCode();
+			//return UIPageWithXaml();			
+		}
+
+		public static ContentPage UIPageWithCode()
+		{
+			Button buttonPrint = new Button()
 			{
-				Content = new Label
-				{
-					Text = "Hello, Forms !",
-					VerticalOptions = LayoutOptions.CenterAndExpand,
-					HorizontalOptions = LayoutOptions.CenterAndExpand,
-				},
+				Text = "Print"
 			};
+
+			ContentPage page = new ContentPage()
+			{
+				Content = buttonPrint
+			};
+
+			return page;
 		}
 	}
 }

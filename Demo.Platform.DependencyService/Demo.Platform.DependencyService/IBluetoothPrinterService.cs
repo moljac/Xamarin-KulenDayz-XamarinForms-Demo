@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace HolisticWare.PharmaLogger.BusinessLogic
+namespace Demo.Platform.DependencyService
 {
 	public interface IBluetoothPrinterService
 	{

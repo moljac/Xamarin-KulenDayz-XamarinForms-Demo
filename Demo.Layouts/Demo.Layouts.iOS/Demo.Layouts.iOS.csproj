@@ -3,8 +3,6 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">iPhoneSimulator</Platform>
-    <ProductVersion>8.0.30703</ProductVersion>
-    <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>{340E140C-AE4E-4619-8033-F616B4AA9435}</ProjectGuid>
     <ProjectTypeGuids>{6BC8ED88-2882-458C-8E55-DFD12B67127B};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
     <OutputType>Exe</OutputType>
@@ -84,6 +82,7 @@
   <ItemGroup>
     <ProjectReference Include="..\Demo.Layouts\Demo.Layouts.csproj">
       <Name>Demo.Layouts</Name>
+      <Project>{0B76944A-9686-4063-99DF-DA7FDD5B0AE8}</Project>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>

@@ -3,8 +3,6 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">iPhoneSimulator</Platform>
-    <ProductVersion>8.0.30703</ProductVersion>
-    <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>{8703A74F-8F1E-473C-9217-F512F4CAD759}</ProjectGuid>
     <ProjectTypeGuids>{6BC8ED88-2882-458C-8E55-DFD12B67127B};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
     <OutputType>Exe</OutputType>
@@ -84,6 +82,7 @@
   <ItemGroup>
     <ProjectReference Include="..\Demo.Controls\Demo.Controls.csproj">
       <Name>Demo.Controls</Name>
+      <Project>{C3EC613F-59A7-41A5-9C53-23C863191315}</Project>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>

@@ -4,13 +4,14 @@ using System.Linq;
 using Android.Bluetooth;
 using Android.Content;
 
-using HolisticWare.PharmaLogger.BusinessLogic;
-using HolisticWare.PharmaLogger.BusinessLogic.XamarinAndroid;
-using HolisticWare.PharmaLogger.Utilities;
+
+
+using Demo.Platform.DependencyService.XamarinAndroid;
+
 
 [assembly:Xamarin.Forms.Dependency(typeof(BluetoothPrinterService))]
 
-namespace HolisticWare.PharmaLogger.BusinessLogic.XamarinAndroid
+namespace Demo.Platform.DependencyService.XamarinAndroid
 {
 	public partial class BluetoothPrinterService : IBluetoothPrinterService
 	{ 
