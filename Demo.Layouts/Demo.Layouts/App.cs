@@ -11,11 +11,26 @@ namespace Demo.Layouts
 	{
 		public static Page GetMainPage()
 		{
-			return new 
-				//DemoContentView()
-				//DemoStackLayout()
-				DemoGridLayout()
-				;
+			// TODO: 
+			//		renaming Demo{LAYOUT}InXaml
+			//		renaming Demo{LAYOUT}InCode
+			Page page = new 
+							// DemoContentView()
+
+							// DemoFrame()
+
+							// DemoScrollView()
+
+							 DemoStackLayout()
+							// DemoStackLayoutInCode()
+
+							// DemoAbsoluyeLayout()
+
+							// DemoRelativeLayout()
+
+							//DemoGridLayout()
+							;
+			return page;
 		}
 	}
 }

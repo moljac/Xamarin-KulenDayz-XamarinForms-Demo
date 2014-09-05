@@ -35,27 +35,34 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="App.cs" />
+    <Compile Include="DemoAbsoluteLayoutInCode.cs" />
     <Compile Include="DemoAbsoluyeLayout.xaml.cs">
       <DependentUpon>DemoAbsoluyeLayout.xaml</DependentUpon>
     </Compile>
     <Compile Include="DemoContentView.xaml.cs">
       <DependentUpon>DemoContentView.xaml</DependentUpon>
     </Compile>
+    <Compile Include="DemoContentViewInCode.cs" />
     <Compile Include="DemoFrame.xaml.cs">
       <DependentUpon>DemoFrame.xaml</DependentUpon>
     </Compile>
+    <Compile Include="DemoFrameInCode.cs" />
     <Compile Include="DemoGridLayout.xaml.cs">
       <DependentUpon>DemoGridLayout.xaml</DependentUpon>
     </Compile>
+    <Compile Include="DemoGridLayoutInCode.cs" />
     <Compile Include="DemoRelativeLayout.xaml.cs">
       <DependentUpon>DemoRelativeLayout.xaml</DependentUpon>
     </Compile>
+    <Compile Include="DemoRelativeLayoutInCode.cs" />
     <Compile Include="DemoScrollView.xaml.cs">
       <DependentUpon>DemoScrollView.xaml</DependentUpon>
     </Compile>
+    <Compile Include="DemoScrollViewInCode.cs" />
     <Compile Include="DemoStackLayout.xaml.cs">
       <DependentUpon>DemoStackLayout.xaml</DependentUpon>
     </Compile>
+    <Compile Include="DemoStackLayoutInCode.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

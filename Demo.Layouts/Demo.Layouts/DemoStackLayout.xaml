@@ -2,39 +2,51 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
 					   xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
 					   x:Class="Demo.Layouts.DemoStackLayout">
+
+	
 	<StackLayout>
+
 		<StackLayout
 			Orientation="Vertical"
 			>
-			<Button
-				Text="Button"
+			<Label
+				Text="Data:"
 			>
-			</Button>
-			<Button
-				Text="Button"
+			</Label>
+			<Entry
+				Placeholder="data"
 			>
-			</Button>
+			</Entry>
 			<Button
-				Text="Button"
+				Text="Send"
 			>
 			</Button>
 		</StackLayout>
+
 		<StackLayout
 			Orientation="Horizontal"
 			>
-			<Button
-				Text="Button"
+			<Label
+				Text="Data:"
 			>
-			</Button>
-			<Button
-				Text="Button"
+			</Label>
+			<Entry
+				Placeholder="data"
 			>
-			</Button>
+			</Entry>
 			<Button
-				Text="Button"
+				Text="Send"
 			>
 			</Button>
 		</StackLayout>
+
 	</StackLayout>
 
+	<!-- 
+	  <ContentPage.Padding>
+	    <OnPlatform x:TypeArguments="Thickness">
+	      <OnPlatform.iOS>0, 20, 0, 0</OnPlatform.iOS>
+	    </OnPlatform>
+	  </ContentPage.Padding>
+  	-->
 </ContentPage>
