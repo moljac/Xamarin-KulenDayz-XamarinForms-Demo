@@ -2,18 +2,15 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-
-using Xamarin.Forms;
+using System.Threading.Tasks;
 
 namespace Demo.Layouts
 {
-	public class App
+	public partial class DemoAbsoluyeLayout
 	{
-		public static Page GetMainPage()
+		public DemoAbsoluyeLayout()
 		{
-			return new 
-				DemoGridLayout()
-				;
+			InitializeComponent();
 		}
 	}
 }
