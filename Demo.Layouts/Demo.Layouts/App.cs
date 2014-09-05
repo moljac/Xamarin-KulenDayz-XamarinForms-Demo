@@ -12,6 +12,8 @@ namespace Demo.Layouts
 		public static Page GetMainPage()
 		{
 			return new 
+				//DemoContentView()
+				//DemoStackLayout()
 				DemoGridLayout()
 				;
 		}
