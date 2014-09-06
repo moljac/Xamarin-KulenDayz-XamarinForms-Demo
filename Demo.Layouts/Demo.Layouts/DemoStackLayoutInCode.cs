@@ -30,39 +30,23 @@ namespace Demo.Layouts
 			}
 
 
+
+
 			StackLayout stack_layout_h =  new StackLayout()
 			{
 				Orientation = StackOrientation.Horizontal
 			};
 
+			stack_layout_h.Children.Add( new Label() { Text = "Data:" });
+
+			stack_layout_h.Children.Add( new Entry(){ Placeholder = "data" });
+
+			stack_layout_h.Children.Add( new Button(){ Text = "Send" } );
+
 			StackLayout stack_layout_o =  new StackLayout()
 			{
 				Orientation = StackOrientation.Vertical
 			};
-
-			stack_layout_h.Children.Add
-				(
-					new Label() 
-					{
-						Text = "Data:"
-					}
-				);
-
-			stack_layout_h.Children.Add
-				(
-					new Entry()
-					{
-						Placeholder = "data"
-					}
-				);
-
-			stack_layout_h.Children.Add
-				(
-					new Button()
-					{
-						Text = "Send"
-					}
-				);
 
 			stack_layout_o.Children.Add
 				(

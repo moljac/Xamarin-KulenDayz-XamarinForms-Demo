@@ -35,6 +35,26 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="App.cs" />
+    <Compile Include="DemoCarouselPageInCode.cs" />
+    <Compile Include="DemoCarouselPageInXaml.xaml.cs">
+      <DependentUpon>DemoCarouselPageInXaml.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="DemoContentPageInCode.cs" />
+    <Compile Include="DemoContentPageInXaml.xaml.cs">
+      <DependentUpon>DemoContentPageInXaml.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="DemoMasterDetailPageInCode.cs" />
+    <Compile Include="DemoMasterDetailPageInXaml.xaml.cs">
+      <DependentUpon>DemoMasterDetailPageInXaml.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="DemoNavigationPageInCode.cs" />
+    <Compile Include="DemoNavigationPageInXaml.xaml.cs">
+      <DependentUpon>DemoNavigationPageInXaml.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="DemoTabbedPageInCode.cs" />
+    <Compile Include="DemoTabbedPageInXaml.xaml.cs">
+      <DependentUpon>DemoTabbedPageInXaml.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\Portable\$(TargetFrameworkVersion)\Microsoft.Portable.CSharp.targets" />
@@ -62,5 +82,35 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="DemoCarouselPageInXaml.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="DemoContentPageInXaml.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="DemoNavigationPageInXaml.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="DemoTabbedPageInXaml.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="DemoMasterDetailPageInXaml.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </EmbeddedResource>
   </ItemGroup>
 </Project>
