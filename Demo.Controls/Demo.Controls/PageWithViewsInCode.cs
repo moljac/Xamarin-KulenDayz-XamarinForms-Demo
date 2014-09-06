@@ -75,34 +75,21 @@ namespace Demo.Controls
 									Width = new GridLength (1, GridUnitType.Star)
 								},
 							},
+
+						// add controls to Grid.Childer
 						Children =
 							{
 								{
-									new Label 
-									{
-										Text = "Data:",
-										HorizontalOptions = LayoutOptions.CenterAndExpand,
-										VerticalOptions = LayoutOptions.FillAndExpand
-									}
-									, 0, 2, 0, 1
+									new Label { Text = "Data:" }
+									, 0, 0
 								},
 								{
-									new Label 
-									{
-										Text = "Data:",
-										HorizontalOptions = LayoutOptions.CenterAndExpand,
-										VerticalOptions = LayoutOptions.FillAndExpand
-									}
-									, 0, 2, 0, 1
+									new Entry {Placeholder = "data"}
+									, 1, 0
 								},
 								{
-									new Label 
-									{
-										Text = "Data:",
-										HorizontalOptions = LayoutOptions.CenterAndExpand,
-										VerticalOptions = LayoutOptions.FillAndExpand
-									}
-									, 0, 2, 0, 1
+									new Button { Text = "Send" }
+									, 2, 0
 								},
 								//{BuildPalletFrame(), 0, 1},
 								//{new ContentView {
@@ -112,6 +99,7 @@ namespace Demo.Controls
 								//    VerticalOptions = LayoutOptions.FillAndExpand
 								//}, 1, 1}
 							}
+
 					};
 
 			/*

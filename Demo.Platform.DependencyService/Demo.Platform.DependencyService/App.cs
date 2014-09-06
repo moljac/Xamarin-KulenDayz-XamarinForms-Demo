@@ -17,15 +17,40 @@ namespace Demo.Platform.DependencyService
 
 		public static ContentPage UIPageWithCode()
 		{
+			Label labelText = new Label()
+			{
+				Text = "Data:"
+			};
+
+			Entry entryData = new Entry()
+			{
+				Placeholder = "data"
+			};
+
 			Button buttonPrint = new Button()
 			{
 				Text = "Print"
 			};
 
 			buttonPrint.Clicked += buttonPrint_Clicked;
+
+
+			StackLayout sl = new StackLayout()
+			{
+				Orientation  = StackOrientation.Vertical
+			};
+
+			sl.Children.Add(labelText);
+			sl.Children.Add(entryData);
+			sl.Children.Add(buttonPrint);
+
+
+
+
+
 			ContentPage page = new ContentPage()
 			{
-				Content = buttonPrint
+				Content = sl
 			};
 
 			return page;
@@ -33,8 +58,11 @@ namespace Demo.Platform.DependencyService
 
 		static void buttonPrint_Clicked(object sender, EventArgs e)
 		{
+
+			// KUD Idijote:
+			//		upali BT
+			//		alo permissions
 			IBluetoothPrinterService ibs = null;
-			
 
 			// get Registered service from Platform lib
 			ibs = Xamarin.Forms.DependencyService.Get<IBluetoothPrinterService>();
@@ -42,6 +70,7 @@ namespace Demo.Platform.DependencyService
 			string data = "KulenDayz 2014";
 
 			ibs.Write(data);
+
 
 			return;
 		}

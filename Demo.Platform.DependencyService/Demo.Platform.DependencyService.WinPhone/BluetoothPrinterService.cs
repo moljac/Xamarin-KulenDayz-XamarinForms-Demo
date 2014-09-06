@@ -2,9 +2,9 @@
 using System.Linq;
 
 
-using HolisticWare.PharmaLogger.Utilities;
 
-[assembly:Xamarin.Forms.Dependency(typeof(BluetoothPrinterService))]
+using Demo.Platform.DependencyService.WindowsPhone;
+[assembly: Xamarin.Forms.Dependency(typeof(BluetoothPrinterService))]
 
 namespace Demo.Platform.DependencyService.WindowsPhone
 {

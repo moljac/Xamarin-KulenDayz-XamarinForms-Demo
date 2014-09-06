@@ -1,13 +1,11 @@
 ﻿using System;
 using System.Linq;
 
-using Android.Bluetooth;
 using Android.Content;
 
 
 
 using Demo.Platform.DependencyService.XamarinAndroid;
-
 
 [assembly:Xamarin.Forms.Dependency(typeof(BluetoothPrinterService))]
 
@@ -15,12 +13,14 @@ namespace Demo.Platform.DependencyService.XamarinAndroid
 {
 	public partial class BluetoothPrinterService : IBluetoothPrinterService
 	{ 
+		Android.Bluetooth.BluetoothSocket _socket = null;
+
 		public BluetoothPrinterService ()
 		{
-			BluetoothAdapter ba = null;
+			Android.Bluetooth.BluetoothAdapter ba = null;
 			try
 			{
-				ba = BluetoothAdapter.DefaultAdapter;
+				ba = Android.Bluetooth.BluetoothAdapter.DefaultAdapter;
 			}
 			catch (Exception exc)
 			{
@@ -44,7 +44,7 @@ namespace Demo.Platform.DependencyService.XamarinAndroid
 				LoggerService.WriteLine (bd.Name);
 			}
 			string device_name = "Qsprinter";
-			BluetoothDevice device = 
+			Android.Bluetooth.BluetoothDevice device = 
 				(
 				    from bd in ba.BondedDevices
 				    where bd.Name == device_name
@@ -99,7 +99,6 @@ namespace Demo.Platform.DependencyService.XamarinAndroid
 			return;	
 		}
 
-		BluetoothSocket _socket = null;
 
 		byte[] buffer = new byte[1024];
 
