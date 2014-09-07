@@ -12,9 +12,11 @@ namespace Demo.Pages
 		public static Page GetMainPage()
 		{
 			return new 
-						DemoTabbedPageInCode()
+						//DemoCarouselPageInCode()
+						DemoCarouselPageInXaml()
+
+						//DemoTabbedPageInCode()
 						//DemoTabbedPageInXaml()
-						//DemoCarouselPageInXaml()
 						//
 						;
 		}

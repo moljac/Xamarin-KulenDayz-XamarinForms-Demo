@@ -2,11 +2,57 @@
 <TabbedPage
 	xmlns="http://xamarin.com/schemas/2014/forms"
 	xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-	xmlns:local="clr-namespace:NogginXamarinFormSample;assembly=NogginXamarinFormSample"
-	x:Class="Demo.Pages.DemoTabbedPageInXaml">
+	x:Class="Demo.Pages.DemoTabbedPageInXaml"
+	xmlns:CustomControl="clr-namespace:Demo.Pages;assembly=Demo.Pages"
+	>
 	<TabbedPage.Children>
-		<ContentPage Title="Page 1" Icon="icon2.png" />
-		<ContentPage Title="Page 2" Icon="icon2.png" />
-		<ContentPage Title="Page 3" Icon="icon3.png" />
+
+		<ContentPage Title="Page 1" Icon="icon2.png">
+
+			<StackLayout
+				Orientation="Vertical"
+				>
+				<Label
+					Text="Data:"
+				>
+				</Label>
+				<Entry
+					Placeholder="data"
+				>
+				</Entry>
+				<Button
+					Text="Send"
+				>
+				</Button>
+			</StackLayout>
+
+		</ContentPage>
+
+		<ContentPage Title="Page 2" Icon="icon2.png">
+
+			<StackLayout
+				Orientation="Horizontal"
+				>
+				<Label
+					Text="Data:"
+				>
+				</Label>
+				<Entry
+					Placeholder="data"
+				>
+				</Entry>
+				<Button
+					Text="Send"
+				>
+				</Button>
+			</StackLayout>
+
+		</ContentPage>
+
+		<ContentPage Title="Page 3" Icon="icon3.png">
+			<CustomControl:ContentViewAsUserControl>
+			</CustomControl:ContentViewAsUserControl>
+		</ContentPage>
+
 	</TabbedPage.Children>
 </TabbedPage>

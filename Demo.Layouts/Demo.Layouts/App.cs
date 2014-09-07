@@ -21,14 +21,14 @@ namespace Demo.Layouts
 
 							// DemoScrollView()
 
-							 DemoStackLayout()
+							//DemoStackLayout()
 							// DemoStackLayoutInCode()
 
 							// DemoAbsoluyeLayout()
 
 							// DemoRelativeLayout()
 
-							//DemoGridLayout()
+							DemoGridLayout()
 							;
 			return page;
 		}

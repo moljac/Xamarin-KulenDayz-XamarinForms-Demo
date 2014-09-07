@@ -1428,7 +1428,7 @@ Global
 		{6C4A4003-082D-4D1F-8B23-D4A9EE214760} = {F6F623BC-F7A4-43F7-B658-1DFD6B774EF2}
 	EndGlobalSection
 	GlobalSection(MonoDevelopProperties) = preSolution
-		StartupItem = Demo.Pages\Demo.Pages.iOS\Demo.Pages.iOS.csproj
+		StartupItem = Demo.Pages\Demo.Pages.Android\Demo.Pages.Android.csproj
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
