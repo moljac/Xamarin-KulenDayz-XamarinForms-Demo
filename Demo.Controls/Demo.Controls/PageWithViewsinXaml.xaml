@@ -8,6 +8,12 @@
 		<Grid.RowDefinitions>
 			<RowDefinition Height="*" />
 			<RowDefinition Height="*" />
+			<RowDefinition Height="*" />
+			<RowDefinition Height="*" />
+			<RowDefinition Height="*" />
+			<RowDefinition Height="*" />
+			<RowDefinition Height="*" />
+			<RowDefinition Height="*" />
 		</Grid.RowDefinitions>
 
 		<Grid.ColumnDefinitions>
@@ -33,10 +39,33 @@
 			/>
 		<Stepper
 			Grid.Row="1" Grid.Column="0"
+			VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand"
 			/>
 		<Slider
 			Grid.Row="1" Grid.Column="1"
+			VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand"
 			/>
+		<ActivityIndicator
+			Grid.Row="1" Grid.Column="2"
+			IsRunning="true"
+			Color="Maroon"
+			BackgroundColor="Black"
+			VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand"
+			>
+		</ActivityIndicator>
+
+
+	    <BoxView 
+			Grid.Row="2" Grid.Column="0"
+	    	Color="Yellow"
+	    	VerticalOptions="FillAndExpand" 
+	    	>
+	    </BoxView>
+
+	    <Editor
+			Grid.Row="3" Grid.Column="0" Grid.ColumnSpan="3" Grid.RowSpan="2"
+	    	>
+	    </Editor>
 
 		<!--
 

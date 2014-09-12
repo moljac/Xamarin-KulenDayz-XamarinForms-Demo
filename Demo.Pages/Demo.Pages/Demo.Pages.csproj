@@ -119,17 +119,15 @@
       <Generator>MSBuild:Compile</Generator>
     </EmbeddedResource>
   </ItemGroup>
-
-
-	<Target Name="BeforeBuild">
-	    <!-- Remove obj folder -->
-	    <RemoveDir Directories="$(BaseIntermediateOutputPath)" />
-	    <!-- Remove bin folder -->
-	    <RemoveDir Directories="$(BaseOutputPath)" />
-	</Target>
-  	<Target Name="RemoveObjAndBin" AfterTargets="Clean">
-		<RemoveDir Directories="$(BaseIntermediateOutputPath)" />
-		<RemoveDir Directories="$(TargetDir)" />
-	    <RemoveDir Directories="$(BaseOutputPath)" />
-	</Target>
+  <Target Name="BeforeBuild">
+    <!-- Remove obj folder -->
+    <RemoveDir Directories="$(BaseIntermediateOutputPath)" />
+    <!-- Remove bin folder -->
+    <RemoveDir Directories="$(BaseOutputPath)" />
+  </Target>
+  <Target Name="RemoveObjAndBin" AfterTargets="Clean">
+    <RemoveDir Directories="$(BaseIntermediateOutputPath)" />
+    <RemoveDir Directories="$(TargetDir)" />
+    <RemoveDir Directories="$(BaseOutputPath)" />
+  </Target>
 </Project>
