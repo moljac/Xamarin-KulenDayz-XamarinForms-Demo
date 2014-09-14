@@ -35,6 +35,9 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="App.cs" />
+    <Compile Include="MainPage.xaml.cs">
+      <DependentUpon>MainPage.xaml</DependentUpon>
+    </Compile>
     <Compile Include="PageWithViewsInCode.cs" />
     <Compile Include="PageWithViewsinXaml.xaml.cs">
       <DependentUpon>PageWithViewsinXaml.xaml</DependentUpon>
@@ -73,10 +76,16 @@
   <ItemGroup>
     <None Include="packages.config" />
   </ItemGroup>
-	<Target Name="BeforeBuild">
-	    <!-- Remove obj folder -->
-	    <RemoveDir Directories="$(BaseIntermediateOutputPath)" />
-	    <!-- Remove bin folder -->
-	    <RemoveDir Directories="$(BaseOutputPath)" />
-	</Target>
+  <ItemGroup>
+    <EmbeddedResource Include="MainPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </EmbeddedResource>
+  </ItemGroup>
+  <Target Name="BeforeBuild">
+    <!-- Remove obj folder -->
+    <RemoveDir Directories="$(BaseIntermediateOutputPath)" />
+    <!-- Remove bin folder -->
+    <RemoveDir Directories="$(BaseOutputPath)" />
+  </Target>
 </Project>

@@ -11,10 +11,7 @@ namespace Demo.Controls
 	{
 		public static Page GetMainPage()
 		{
-			return new 
-					//PageWithViewsInCode()
-					PageWithViewsInXaml()
-					;
+			return new MainPage();
 		}
 
 

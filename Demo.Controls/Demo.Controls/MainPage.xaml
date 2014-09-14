@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+					   xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+					   x:Class="Demo.Controls.MainPage">
+
+	<StackLayout>
+		<Button
+			x:Name="buttonConotrolsInXaml"
+			Clicked="buttonConotrolsInXaml_Clicked"
+			Text="Controls in XAML"
+			>
+
+		</Button>
+		<Button
+			x:Name="buttonConotrolsInCode"
+			Text="Controls in code"
+			>
+		</Button>
+	</StackLayout>
+</ContentPage>
