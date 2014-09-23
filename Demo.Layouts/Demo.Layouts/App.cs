@@ -11,9 +11,6 @@ namespace Demo.Layouts
 	{
 		public static Page GetMainPage()
 		{
-			// TODO: 
-			//		renaming Demo{LAYOUT}InXaml
-			//		renaming Demo{LAYOUT}InCode
 			Page page = new 
 							// DemoContentView()
 

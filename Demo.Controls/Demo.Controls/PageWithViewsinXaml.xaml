@@ -43,7 +43,7 @@
 				/>
 			<Slider
 				Grid.Row="1" Grid.Column="1"
-				VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand"
+				VerticalOptions="CenterAndExpand" HorizontalOptions="FillAndExpand"
 				/>
 			<ActivityIndicator
 				Grid.Row="1" Grid.Column="2"
@@ -70,16 +70,15 @@
 
 
 			<Picker 
-				SelectedIndex="{Binding NewCriterion.Importance}" 
 				Grid.Row="4" Grid.Column="0" 
 				>
-				<!--
-				<Items>
+				<Picker.Items>
 					<x:String>1</x:String> 
 					<x:String>2</x:String>
 					<x:String>3</x:String>
 					<x:String>4</x:String>
-				</Items>
+				</Picker.Items>
+				<!--
 				-->
 			</Picker> 
 
@@ -93,6 +92,21 @@
 				>
 			</TimePicker>
 
+
+
+
+			<!--
+			http://developer.xamarin.com/guides/cross-platform/xamarin-forms/working-with/images/
+			-->
+			<Image
+				Source="http://xamarin.com/content/images/pages/index/xamarin-studio-icon@2x.png" 
+			>
+			</Image>
+
+			<OpenGL
+				HasRenderLoop = true
+				>
+			</OpenGL>
 			<!--
 			<TableView>
 			    <TableView.Root>

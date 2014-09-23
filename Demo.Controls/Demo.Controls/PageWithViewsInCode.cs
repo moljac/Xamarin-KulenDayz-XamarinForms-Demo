@@ -12,14 +12,30 @@ namespace Demo.Controls
 	{
 		public PageWithViewsInCode()
 		{
-			Content = BuildGrid();
+			Content = Grid();
 
-			// Accomodate iPhone status bar.
+			// HACk: mc++ Accomodate iPhone status bar.
 			Padding = new Thickness(10, Device.OnPlatform(20, 0, 0), 10, 10);
+
+			return;
 		}
 
-		private Grid BuildGrid()
+		private Grid Grid()
 		{
+			Label labelData = new Label 
+									{
+										Text = "Data:", 
+									};
+			Entry entryData = new Entry 
+									{
+										Placeholder = "data"
+									};
+			Button buttonDataSave = new Button 
+									{
+										Text = "Send" 
+									};
+
+
 			Grid grid =
 					new Grid
 					{
@@ -75,21 +91,21 @@ namespace Demo.Controls
 									Width = new GridLength (1, GridUnitType.Star)
 								},
 							},
-
-						// add controls to Grid.Childer
-						Children =
+								
+							// add controls to Grid.Childrern
+							Children =
 							{
 								{
-									new Label { Text = "Data:" }
-									, 0, 0
+									labelData, 
+									0, 0
 								},
 								{
-									new Entry {Placeholder = "data"}
-									, 1, 0
+									entryData,
+									1, 0
 								},
 								{
-									new Button { Text = "Send" }
-									, 2, 0
+									buttonDataSave,
+									2, 0
 								},
 								//{BuildPalletFrame(), 0, 1},
 								//{new ContentView {
