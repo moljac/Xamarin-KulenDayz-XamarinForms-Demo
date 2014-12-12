@@ -42,14 +42,5 @@
 
 	</StackLayout>
 
-	<!--
-		mc++ 
-		Platform Specific uncomment this part to see the difference!
-
-	  <ContentPage.Padding>
-	    <OnPlatform x:TypeArguments="Thickness">
-	      <OnPlatform.iOS>0, 20, 0, 0</OnPlatform.iOS>
-	    </OnPlatform>
-	  </ContentPage.Padding>
-  	-->
+	
 </ContentPage>
